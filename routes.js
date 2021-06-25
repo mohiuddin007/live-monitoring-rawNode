@@ -5,8 +5,11 @@
 
 //dependencies
 const {sampleHandler} = require('./handler/routeHandlers/sampleHander')
+
+//scaffolding
 const routes = {
     sample: sampleHandler,
 };
+
 
 module.exports = routes;
