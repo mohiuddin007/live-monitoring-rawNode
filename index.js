@@ -7,9 +7,20 @@
 const http = require("http");
 const {handleReqRes} = require("./helpers/handleReqRes");
 const environment = require('./helpers/environment');
+const data = require('./lib/data');
 
 //app object = module scaffolding
 const app = {};
+
+// data.update('test', 'newFile', {name: 'England', langu: 'english'}, (err) => {
+//  console.log(err)
+// })
+
+// data.delete('test', 'newFile', (err) => {
+//   console.log(err)
+//  })
+
+
 
 //handle request response
 app.handleReqRes = handleReqRes;
