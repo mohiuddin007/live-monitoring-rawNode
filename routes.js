@@ -7,6 +7,7 @@
 const {sampleHandler} = require('./handler/routeHandlers/sampleHander');
 const {userHandler} = require('./handler/routeHandlers/userHandler');
 const {tokenHandler} = require('./handler/routeHandlers/tokenHandler');
+const {checkHandler} = require('./handler/routeHandlers/checkHandler');
 
 
 //scaffolding
@@ -14,6 +15,7 @@ const routes = {
     sample: sampleHandler,
     user: userHandler,
     token: tokenHandler,
+    check: checkHandler,
 };
 
 
