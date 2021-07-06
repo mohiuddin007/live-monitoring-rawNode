@@ -8,17 +8,15 @@ const http = require("http");
 const {handleReqRes} = require("./helpers/handleReqRes");
 const environment = require('./helpers/environment');
 const data = require('./lib/data');
+const {sendTwilioSms} = require('./helpers/notifications');
 
 //app object = module scaffolding
 const app = {};
 
-// data.update('test', 'newFile', {name: 'England', langu: 'english'}, (err) => {
-//  console.log(err)
-// })
-
-// data.delete('test', 'newFile', (err) => {
-//   console.log(err)
-//  })
+//Todo remove later
+sendTwilioSms('01934373828', 'Hello world', (err)=>{
+  console.log(`this is the error`, err)
+})
 
 
 
